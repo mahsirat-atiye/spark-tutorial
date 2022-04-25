@@ -20,9 +20,6 @@ slack_msg = """• ChurnLifetimeOneTimer        | preview:   53.60 | compute:  0
 • Returned                     | preview:   29.79 | compute:  0.29 | persist:  3.00 | total:   33.08
 • UserIsActiveLastN            | preview:   19.28 | compute:  0.31 | persist:  2.82 | total:   22.40"""
 
-import json
-import pandas as pd
-import plotly.express as px
 def draw_plot(slack_msg):
     slack_msg = slack_msg.replace("• ", "}, { 'task' : '")
     slack_msg = slack_msg[3:]
