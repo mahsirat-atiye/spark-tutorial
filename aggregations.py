@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 
 
-x = [i for i in range(1, 10)]
+x = [i for i in range(1, 300)]
 ts =[]
 for n in x:
     df = spark.range(1000).withColumn('id', f.col('id'))

@@ -5,7 +5,7 @@ from pyspark.sql import functions as f
 import matplotlib.pyplot as plt
 from pyspark.sql.window import Window
 
-x = [i for i in range(1, 10)]
+x = [i for i in range(1, 50)]
 ts =[]
 for n in x:
     df = spark.range(1000).withColumn('id', f.col('id'))
